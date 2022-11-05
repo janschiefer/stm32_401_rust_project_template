@@ -26,7 +26,9 @@ rpath = false
 
 [dependencies]
 
-stm32f4 = {version = "0.15", features = ["stm32f401", "rt"]}
+#stm32f4 = {version = "0.15", features = ["stm32f401", "rt"]}
+stm32f4xx-hal = { version = "0.13", features = [ "stm32f401" ] }
+
 embedded-hal = "0.2"
 nb = "1"
 cortex-m = "0.7"
